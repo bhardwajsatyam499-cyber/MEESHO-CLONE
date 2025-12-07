@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<head>
+    <title> Meesho</title>
+    <link rel="icon" type="icon/jpg" href="meesho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        /*                     NAVBAR                */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            background: #fff;
+            flex-wrap: wrap;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar-left img {
+            width: 140px;
+        }
+
+        .search-box {
+            padding: 10px;
+            width: 350px;
+            font-size: 16px;
+        }
+
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-icons i, .nav-icons a {
+            font-size: 17px;
+            color: gray;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .nav-icons i:hover, .nav-icons a:hover {
+            color: rgb(157, 18, 157);
+        }
+
+        /*                MENU              */
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            background: #fff;
+            padding: 12px 0;
+        }
+
+        .menu a {
+            font-size: 16px;
+            text-decoration: none;
+            color: rgb(125, 125, 125);
+        }
+
+        .menu a:hover {
+            color: rgb(157, 18, 157);
+            font-weight: 600;
+        }
+
+        /*           BANNER IMAGE FIX           */
+        /* Banner Container */
+.banner-box {
+    position: relative;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Text on Right Side */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    right: 40px;       /* Ye line text ko bilkul right me fix karegi */
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    width: 400px;      /* Taaki text wrap ho jaye aur QR ke upar na aaye */
+}
+
+.banner-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.banner-text .btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* For Small Screens */
+@media (max-width: 600px) {
+    .banner-text {
+        right: 15px;
+        top: 60%;
+        width: 200px;
+    }
+
+    .banner-text h1 {
+        font-size: 20px;
+    }
+
+    .banner-text .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+        /*                INFO BAR  */               
+        .info {
+            display: flex;
+            justify-content: space-around;
+            background: #ecc2d7;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        .info a {
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .info a:hover {
+            color: rgb(157, 18, 157);
+        }
+
+        /* ---------------- RESPONSIVE ---------------- */
+        @media (max-width: 860px) {
+            .search-box {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .navbar-left {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .search-box {
+                width: 60%;
+            }
+
+            .nav-icons {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .search-box {
+                width: 100%;
+            }
+
+            .nav-icons {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .banner {
+                max-height: 260px;   /* Mobile ke liye perfect crop */
+            }
+        }
+
+    </style>
+ </head> 
+ <body>
+
+    <div class="navbar">
+
+        <!-- Left -->
+        <div class="navbar-left">
+            <img src="meesho logo 2.jpg" alt="logo">
+            <input class="search-box" type="text" placeholder="Try Saree, Kurti or Search By Product Code">
+        </div>
+
+        <!-- Right -->
+        <div class="nav-icons">
+            <i class="fa fa-user">User</i>
+            <i class="fa fa-shopping-cart">Cart</i>
+
+            <a href="#">Investor Relation</a>
+            <a href="#">Become a Supplier</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- MENU BAR -->
+    <div class="menu">
+        <a href="#">Popular</a>
+        <a href="#">Kurti,Saree & Lehenga</a>
+        <a href="#">Women Western</a>
+        <a href="#">Lingerie</a>
+        <a href="#">Men</a>
+        <a href="#">Kids & Toys</a>
+        <a href="#">Home & Kitchen</a>
+        <a href="#">Beauty & Health</a>
+        <a href="#">Jewellery & Accessories</a>
+        <a href="#">Bags & Footwear</a>
+        <a href="#">Electronic</a>
+        <a href="#">Watches</a>
+    </div>
+
+    <div class="banner-box">
+    <img src="meesho latest.webp" class="banner">
+    <div class="banner-text">
+        <h1> Smart Shopping<br>Trusted Shopping by Millions</h1><br>
+        <a href="#"class="btn">Shop Now</a>
+    </div>
+    </div>
+    <div class="info">
+        <a href="#"> 7 Days Easy Return</a>
+        <a href="#"> Cash On Delivery</a>
+        <a href="#"> Lowest Prices</a>
+    </div>
+ </body>
+</html>
